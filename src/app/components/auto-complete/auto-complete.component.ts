@@ -7,7 +7,8 @@ import { CountriesService } from 'src/app/countries.service';
 @Component({
   selector: 'app-auto-complete',
   templateUrl: './auto-complete.component.html',
-  styleUrls: ['./auto-complete.component.css']
+  styleUrls: ['./auto-complete.component.css'],
+  providers: [CountriesService],
 })
 export class AutoCompleteComponent {
   //mejora: hacer un servicio

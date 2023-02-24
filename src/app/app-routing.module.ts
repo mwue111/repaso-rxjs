@@ -27,6 +27,7 @@ import { CreateGenerateComponent } from './components/create-generate/create-gen
 import { AutoCompleteComponent } from './components/auto-complete/auto-complete.component';
 
 const routes: Routes = [
+  { path:'', component: WelcomeComponent },
   { path:'welcome', component: WelcomeComponent },
   { path:'time-out', component: SetTimeOutComponent },
   { path:'interval', component: IntervalTimerComponent },
