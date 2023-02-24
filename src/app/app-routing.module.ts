@@ -24,6 +24,7 @@ import { ReplaySubjectComponent } from './components/replay-subject/replay-subje
 import { BehaviorSubjectComponent } from './components/behavior-subject/behavior-subject.component';
 import { DebounceTimeComponent } from './components/debounce-time/debounce-time.component';
 import { CreateGenerateComponent } from './components/create-generate/create-generate.component';
+import { AutoCompleteComponent } from './components/auto-complete/auto-complete.component';
 
 const routes: Routes = [
   { path:'welcome', component: WelcomeComponent },
@@ -50,6 +51,7 @@ const routes: Routes = [
   { path:'behav-subject', component: BehaviorSubjectComponent },
   { path:'debounce', component: DebounceTimeComponent },
   { path:'create-generate', component: CreateGenerateComponent },
+  { path:'auto-complete', component: AutoCompleteComponent },
 ];
 
 @NgModule({

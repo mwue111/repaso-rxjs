@@ -27,6 +27,12 @@ import { ReplaySubjectComponent } from './components/replay-subject/replay-subje
 import { BehaviorSubjectComponent } from './components/behavior-subject/behavior-subject.component';
 import { DebounceTimeComponent } from './components/debounce-time/debounce-time.component';
 import { CreateGenerateComponent } from './components/create-generate/create-generate.component';
+import { AutoCompleteComponent } from './components/auto-complete/auto-complete.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -54,11 +60,18 @@ import { CreateGenerateComponent } from './components/create-generate/create-gen
     ReplaySubjectComponent,
     BehaviorSubjectComponent,
     DebounceTimeComponent,
-    CreateGenerateComponent
+    CreateGenerateComponent,
+    AutoCompleteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatAutocompleteModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
