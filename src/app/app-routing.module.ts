@@ -19,6 +19,11 @@ import { MultObsSerieComponent } from './components/mult-obs-serie/mult-obs-seri
 import { ScanComponent } from './components/scan/scan.component';
 import { SubjectComponent } from './components/subject/subject.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { MulticastComponent } from './components/multicast/multicast.component';
+import { ReplaySubjectComponent } from './components/replay-subject/replay-subject.component';
+import { BehaviorSubjectComponent } from './components/behavior-subject/behavior-subject.component';
+import { DebounceTimeComponent } from './components/debounce-time/debounce-time.component';
+import { CreateGenerateComponent } from './components/create-generate/create-generate.component';
 
 const routes: Routes = [
   { path:'welcome', component: WelcomeComponent },
@@ -40,6 +45,11 @@ const routes: Routes = [
   { path:'mult-obs-serie', component: MultObsSerieComponent },
   { path:'scan', component: ScanComponent },
   { path:'subject', component: SubjectComponent },
+  { path:'multicast', component: MulticastComponent },
+  { path:'replay-subject', component: ReplaySubjectComponent },
+  { path:'behav-subject', component: BehaviorSubjectComponent },
+  { path:'debounce', component: DebounceTimeComponent },
+  { path:'create-generate', component: CreateGenerateComponent },
 ];
 
 @NgModule({

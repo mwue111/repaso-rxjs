@@ -22,6 +22,11 @@ import { MultObsSerieComponent } from './components/mult-obs-serie/mult-obs-seri
 import { ScanComponent } from './components/scan/scan.component';
 import { SubjectComponent } from './components/subject/subject.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { MulticastComponent } from './components/multicast/multicast.component';
+import { ReplaySubjectComponent } from './components/replay-subject/replay-subject.component';
+import { BehaviorSubjectComponent } from './components/behavior-subject/behavior-subject.component';
+import { DebounceTimeComponent } from './components/debounce-time/debounce-time.component';
+import { CreateGenerateComponent } from './components/create-generate/create-generate.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +49,12 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
     MultObsSerieComponent,
     ScanComponent,
     SubjectComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    MulticastComponent,
+    ReplaySubjectComponent,
+    BehaviorSubjectComponent,
+    DebounceTimeComponent,
+    CreateGenerateComponent
   ],
   imports: [
     BrowserModule,
