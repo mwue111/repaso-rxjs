@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { SetTimeOutComponent } from './components/set-time-out/set-time-out.component';
 import { IntervalTimerComponent } from './components/interval-timer/interval-timer.component';
 import { FromEventComponent } from './components/from-event/from-event.component';
@@ -28,11 +29,14 @@ import { BehaviorSubjectComponent } from './components/behavior-subject/behavior
 import { DebounceTimeComponent } from './components/debounce-time/debounce-time.component';
 import { CreateGenerateComponent } from './components/create-generate/create-generate.component';
 import { AutoCompleteComponent } from './components/auto-complete/auto-complete.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -72,6 +76,8 @@ import { MatInputModule } from '@angular/material/input';
     MatAutocompleteModule,
     MatFormFieldModule,
     MatInputModule,
+    MatButtonModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

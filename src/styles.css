@@ -1,4 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: rgb(221, 221, 221);
+
+}
+
+#botonMenu{
+  background-color: white;
+  margin:5px;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+}
+
+.content{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+h1, h3{
+  color:rgb(73, 73, 73);
+}
+
+#timeOutBtn{
+  margin-top: 25px;
+}
+
+.console{
+  margin-top: 25px;
+  font-size: 25px;
+}
+
+#elemento{
+  background-color: rgb(221, 221, 221);
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+}
+
+#switchDiv{
+  margin: 0 auto;
+  margin-top: 35px;
+  padding-top: 18px;
+  font-size: 2rem;
+  background-color: rgb(221, 221, 221);
+  width: 50px;
+  height: 40px;
+  border-radius: 5px;
+
+}
+
+.mult-obs{
+  text-align: start;
+}
+
+ul{
+  list-style: none;
+}
+
+.multiple{
+  margin: 0 10px;
+}
+form{
+  margin-top: 45px;
+}

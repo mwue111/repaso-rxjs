@@ -1,27 +1,33 @@
-<nav>
-  <button routerLink="/welcome">Home</button>
-  <button routerLink="/time-out">SetTimeOut</button>
-  <button routerLink="/interval">Interval-Timer</button>
-  <button routerLink="/from-event">fromEvent</button>
-  <button routerLink="/map-filter">Map y Filter</button>
-  <button routerLink="/tap">Tap</button>
-  <button routerLink="/share">Share</button>
-  <button routerLink="/concat">Concat</button>
-  <button routerLink="/next">Next-Error-Complete</button>
-  <button routerLink="/buffer">bufferTime</button>
-  <button routerLink="/switch">switchMap</button>
-  <button routerLink="/fork">forkJoin</button>
-  <button routerLink="/concat-map">concatMap</button>
-  <button routerLink="/merge-map">mergeMap</button>
-  <button routerLink="/mult-obs">Observables múltiples</button>
-  <button routerLink="/scan">Scan</button>
-  <button routerLink="/subject">Subject</button>
-  <button routerLink="/multicast">Multicast</button>
-  <button routerLink="/replay-subject">replaySubject</button>
-  <button routerLink="/behav-subject">behaviorSubject</button>
-  <button routerLink="/debounce">debounceTime</button>
-  <button routerLink="/create-generate">Create vs Generate</button>
-  <button routerLink="/auto-complete">Implementación</button>
-</nav>
+<button id="botonMenu" mat-button [matMenuTriggerFor]="afterMenu">Menu</button>
+<mat-menu #afterMenu="matMenu" xPosition="after">
+    <div class="menu">
+    <button mat-button routerLink="/welcome">Home</button>
+    <button mat-button routerLink="/time-out">SetTimeOut</button>
+    <button mat-button routerLink="/interval">Interval-Timer</button>
+    <button mat-button routerLink="/from-event">fromEvent</button>
+    <button mat-button routerLink="/map-filter">Map y Filter</button>
+    <button mat-button routerLink="/tap">Tap</button>
+    <button mat-button routerLink="/share">Share</button>
+    <button mat-button routerLink="/concat">Concat</button>
+    <button mat-button routerLink="/next">Next-Error-Complete</button>
+    <button mat-button routerLink="/buffer">bufferTime</button>
+    <button mat-button routerLink="/switch">switchMap</button>
+    <button mat-button routerLink="/fork">forkJoin</button>
+    <button mat-button routerLink="/concat-map">concatMap</button>
+    <button mat-button routerLink="/merge-map">mergeMap</button>
+    <button mat-button routerLink="/mult-obs">Observables múltiples</button>
+    <button mat-button routerLink="/scan">Scan</button>
+    <button mat-button routerLink="/subject">Subject</button>
+    <button mat-button routerLink="/multicast">Multicast</button>
+    <button mat-button routerLink="/replay-subject">replaySubject</button>
+    <button mat-button routerLink="/behav-subject">behaviorSubject</button>
+    <button mat-button routerLink="/debounce">debounceTime</button>
+    <button mat-button routerLink="/create-generate">Create vs Generate</button>
+    <button mat-button routerLink="/auto-complete">Implementación</button>
+  </div>
+  </mat-menu>
+
 <br>
-<router-outlet></router-outlet>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

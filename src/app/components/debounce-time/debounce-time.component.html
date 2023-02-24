@@ -1,13 +1,17 @@
 <p>debounceTime funciona a partir de un valor de entrada. En este ejemplo permite controlar la entrada de datos.</p>
 
-<p>Sin debounceTime:</p>
 <div class="content" role="main">
-  <input type="text" id="search0" placeholder="Buscar">
+<h3>Sin debounceTime:</h3>
+  <mat-form-field>
+    <mat-label>Buscar</mat-label>
+    <input matInput type="text" id="search0">
+  </mat-form-field>
+
+<h3>Con debounceTime:</h3>
+  <mat-form-field>
+    <mat-label>Buscar</mat-label>
+    <input matInput type="text" id="search">
+  </mat-form-field>
 </div>
 
-<p>Con debounceTime:</p>
-<div class="content" role="main">
-  <input type="text" id="search" placeholder="Buscar">
-</div>
-
-<p>¡Mira en consola!</p>
+<div class="console">¡Mira en consola! </div>
